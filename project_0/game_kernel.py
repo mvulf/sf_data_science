@@ -52,18 +52,11 @@ def score_game(test_number:int=1) -> callable:
                 int: Mean number of attempts
             """
             
-            # if test_number == 1:
-            #     # Get attempts for single test
-            #     if guess_number is None: # Is used because theoretically guess_number can be equal to 0
-            #         guess_number = np.random.randint(min_val, max_val+1)
-            #         num_type_str = 'a random'
-            #     else:
-            #         num_type_str = 'your'
-                   
-            #     score = test_kernel(guess_number, min_val, max_val)
-            #     print(f'{test_kernel.__name__} guesses {num_type_str} number in range [{min_val}, {max_val}] with {score} attempts')
-            
-            # else: 
+            # Prepare result-mode for displaying
+            if test_number == 1:
+                res_type_str = ' '
+            else:
+                res_type_str = ' on average '
             
             # Get array of guess numbers
             if guess_number is None:
@@ -82,7 +75,8 @@ def score_game(test_number:int=1) -> callable:
             for number in number_array:
                 attempts_numbers.append(test_kernel(number, min_val, max_val))
             score = int(np.mean(attempts_numbers))
-            print(f'{test_kernel.__name__} guesses {num_type_str} in range [{min_val}, {max_val}] in an average of {score} attempts. Total count of tests: {test_number}')
+            
+            print(f'{test_kernel.__name__} guesses {num_type_str} in range [{min_val}, {max_val}]{res_type_str}in {score} attempts. Total count of tests: {test_number}')
             
             return score
         
@@ -117,7 +111,7 @@ def random_predict(guess_number:int=1, min_val:int=1, max_val:int=100) -> int:
     while True:
         count += 1
         predict_number = np.random.randint(min_val, max_val+1) # Guessed number
-        if guess_number == predict_number:
+        if predict_number == guess_number:
             break # Exit, if we guess
     return(count)
 
@@ -148,10 +142,51 @@ def random_predict_range_dividing(guess_number:int=1, min_val:int=1, max_val:int
     while True:
         count += 1
         predict_number = np.random.randint(min_val, max_val+1) # Guessed number
-        if guess_number == predict_number:
+        if predict_number > guess_number:
+            max_val = predict_number
+        elif predict_number < guess_number:
+            min_val = predict_number
+        else:
+            break # Exit, if we guess
+    return(count)
+
+
+@score_game(test_number)
+def predict_division_two(guess_number:int=1, min_val:int=1, max_val:int=100) -> int:
+    """Predicting the number by getting an average value of range, decreasing according to more/less fedback 
+
+    Args:
+        guess_number (int, optional): Guess number. Defaults to 1.
+        min_val (int, optional): Minimum value of guess number. Defaults to 1.
+        max_val (int, optional): Maximum value of guess number. Defaults to 100.
+
+    Returns:
+        int: Number of attempts
+    """
+    
+    count = 0
+    
+    # Check, that guess number in guess range
+    try:
+        if not(min_val<=guess_number<=max_val):
+            raise ValueError("Guess number out of range")
+    except ValueError as e:
+        print(e)
+        return
+        
+    while True:
+        count += 1
+        predict_number = (min_val+max_val) // 2 # Guessed number
+        if predict_number > guess_number:
+            max_val = predict_number - 1
+        elif predict_number < guess_number:
+            min_val = predict_number + 1
+        else:
             break # Exit, if we guess
     return(count)
 
 
 if __name__ == '__main__':
     random_predict()
+    random_predict_range_dividing()
+    predict_division_two()
