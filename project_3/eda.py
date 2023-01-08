@@ -1,4 +1,6 @@
 import pandas as pd
+import math
+import numpy as np
 
 # Visualization Libs
 import matplotlib
@@ -43,3 +45,55 @@ def box_hist_plot(data: pd.DataFrame, x: str, title: str, hist_kde=False, hist_y
     plt.close(f)    
     # Return figure
     return f
+
+# GET EARTH DISTANCE
+# Earh radius in km
+r = 6371.0 # km
+
+def hav(theta:float)->float:
+    """haversin function
+
+    Args:
+        theta (float): delta between two angles
+
+    Returns:
+        float: haversin
+    """
+    return math.sin(theta/2)**2
+
+def to_rad(theta_deg:float)->float:
+    """Convert degrees to radians
+
+    Args:
+        theta_deg (float): angle in degrees
+
+    Returns:
+        float: _description_
+    """
+    return theta_deg/180 * math.pi
+to_rad_np = np.vectorize(to_rad)
+
+def hav_distance(lat_1:float, lng_1:float, lat_2:float, lng_2:float)->float:
+    """Calculate distance in km between two point on the Earth 
+    by the haversin formula
+
+    Args:
+        lat_1 (float): First point lattitude
+        lng_1 (float): First point longitute
+        lat_2 (float): Second point lattitude
+        lng_2 (float): Second point longitute
+
+    Returns:
+        float: Earth distance in km
+    """
+    coordinates = to_rad_np(np.array([
+        [lat_1, lng_1],
+        [lat_2, lng_2]
+    ]))
+    
+    if np.isnan(coordinates).any():
+        return np.nan
+    
+    return 2*r*math.asin(math.sqrt(hav(coordinates[1,0] - coordinates[0,0]) +\
+    math.cos(coordinates[0,0])*math.cos(coordinates[1,0])*\
+        hav(coordinates[1,1] - coordinates[0,1])))
