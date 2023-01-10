@@ -46,6 +46,38 @@ def box_hist_plot(data: pd.DataFrame, x: str, title: str, hist_kde=False, hist_y
     # Return figure
     return f
 
+
+def get_bins_categories(series: pd.Series, bins_num: int, 
+    method: str='')->pd.Series:
+    """Retrieve categorical series from numerical with ordered int labels
+
+    Args:
+        series (pd.Series): Source series
+        bins_num (int): Number of bins
+        method (str): Method of cutting: 
+            default '' - linear bins
+            quantiles - by quantiles
+
+    Returns:
+        pd.Series: The result of source series cutting - 
+        ordered categorical Series
+    """
+    # Get bins
+    if method=='quantiles':
+        bins = [series.min()]
+        bins.extend([series\
+            .quantile(q=x/10) for x in list(range(1,bins_num))])
+        bins.append(series.max())
+    else:
+        bins = list(np.linspace(series.min(), series.max(), bins_num+1))
+        
+    # Get labels
+    labels=list(range(0,bins_num))
+    
+    # Cut Series
+    return pd.cut(series, bins=bins, labels=labels)
+
+
 # GET EARTH DISTANCE
 # Earh radius in km
 r = 6371.0 # km
