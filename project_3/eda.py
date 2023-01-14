@@ -12,7 +12,7 @@ def box_hist_plot(data: pd.DataFrame, x: str, title: str, hist_kde=False, hist_y
 
     Args:
         data (pd.DataFrame): Data for plotting
-        x (str): Columns name for plotting
+        x (str): Column name for plotting
         title (str): Figure (plot) name
         hist_kde (bool): If True, compute a Kernel Density Estimate. Defaults to False.
         hist_yscale (str): Hist count axis Scale. Defaults to 'linear'.
@@ -75,7 +75,7 @@ def get_bins_categories(series: pd.Series, bins_num: int,
     labels=list(range(0,bins_num))
     
     # Cut Series
-    return pd.cut(series, bins=bins, labels=labels)
+    return pd.cut(series, bins=bins, labels=labels, include_lowest=True)
 
 
 # GET EARTH DISTANCE
@@ -129,3 +129,4 @@ def hav_distance(lat_1:float, lng_1:float, lat_2:float, lng_2:float)->float:
     return 2*r*math.asin(math.sqrt(hav(coordinates[1,0] - coordinates[0,0]) +\
     math.cos(coordinates[0,0])*math.cos(coordinates[1,0])*\
         hav(coordinates[1,1] - coordinates[0,1])))
+    
