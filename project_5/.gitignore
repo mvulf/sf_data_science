@@ -1,3 +1,3 @@
-./data/osrm_data_train.csv
-./data/osrm_data_test.csv
-./data/train.csv
+data/osrm_data_train.csv
+data/osrm_data_test.csv
+data/train.csv
