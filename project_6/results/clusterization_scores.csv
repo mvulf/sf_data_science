@@ -1,0 +1,871 @@
+descriptor,scaler,cluster_class,cluster_class_params,labels,n_clusters,calinski_harabasz_score,davies_bouldin_score
+efficientnet-b7,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,1.4954468845765527,0.8104323781522458
+efficientnet-b7,norm,KMeans,{'n_clusters': 3},[2 2 2 ... 2 2 2],3,1.0678413324816771,0.9838718460714473
+efficientnet-b7,norm,KMeans,{'n_clusters': 4},[3 2 2 ... 3 2 2],4,50.99889314134432,8.596172436900417
+efficientnet-b7,norm,KMeans,{'n_clusters': 5},[4 4 3 ... 3 4 4],5,39.24139459092707,7.137229108905475
+efficientnet-b7,norm,KMeans,{'n_clusters': 6},[2 2 2 ... 2 2 2],6,1.3606031559604888,1.214462183290007
+efficientnet-b7,norm,KMeans,{'n_clusters': 7},[4 4 5 ... 5 5 4],7,22.74968829889385,4.808201227858575
+efficientnet-b7,norm,KMeans,{'n_clusters': 8},[1 4 4 ... 4 6 6],8,40.473873400805424,6.276858312491076
+efficientnet-b7,norm,KMeans,{'n_clusters': 9},[2 1 1 ... 5 2 2],9,38.34819802447726,5.301398652500526
+efficientnet-b7,norm,KMeans,{'n_clusters': 10},[4 6 6 ... 5 4 4],10,43.88398020297486,5.7989626864509365
+efficientnet-b7,norm,KMeans,{'n_clusters': 11},[2 5 5 ... 6 6 6],11,28.476696835390683,4.953457755366441
+efficientnet-b7,norm,KMeans,{'n_clusters': 12},[2 5 5 ... 5 2 2],12,16.961446965592216,3.457632585672538
+efficientnet-b7,norm,KMeans,{'n_clusters': 13},[11  1  1 ...  1  4 11],13,25.466782591828505,4.098358357080469
+efficientnet-b7,norm,KMeans,{'n_clusters': 14},[10 13  4 ...  5  5 10],14,36.696755295657496,5.566371337381402
+efficientnet-b7,norm,KMeans,{'n_clusters': 15},[ 9  6 13 ... 12  4 11],15,44.869976658842575,6.160494789685675
+efficientnet-b7,std,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,1.4906295799002927,0.8117432290283675
+efficientnet-b7,std,KMeans,{'n_clusters': 3},[2 2 2 ... 2 2 2],3,1.1404497285102948,1.7934729810400558
+efficientnet-b7,std,KMeans,{'n_clusters': 4},[3 2 2 ... 3 3 3],4,41.29180398909343,9.521993906582136
+efficientnet-b7,std,KMeans,{'n_clusters': 5},[4 4 4 ... 4 4 4],5,1.0213020761167846,1.4622097741394207
+efficientnet-b7,std,KMeans,{'n_clusters': 6},[2 2 4 ... 4 2 2],6,23.302341789231132,6.966000786361929
+efficientnet-b7,std,KMeans,{'n_clusters': 7},[3 5 3 ... 5 5 3],7,19.531962877581034,6.145668913246932
+efficientnet-b7,std,KMeans,{'n_clusters': 8},[2 4 0 ... 0 6 2],8,46.265433873731425,7.705666779183174
+efficientnet-b7,std,KMeans,{'n_clusters': 9},[2 5 5 ... 5 2 2],9,17.01788410890405,4.718560082380793
+efficientnet-b7,std,KMeans,{'n_clusters': 10},[2 6 5 ... 5 5 6],10,25.507655360735114,5.736841843598044
+efficientnet-b7,std,KMeans,{'n_clusters': 11},[7 5 5 ... 7 7 2],11,23.986806622576328,5.028724263037259
+efficientnet-b7,std,KMeans,{'n_clusters': 12},[2 1 1 ... 4 2 2],12,22.17151512682843,4.556159986023112
+efficientnet-b7,std,KMeans,{'n_clusters': 13},[11  1  1 ...  5  9 11],13,34.83961086169301,5.873283510407472
+efficientnet-b7,std,KMeans,{'n_clusters': 14},[6 4 2 ... 4 6 2],14,18.336974317680063,4.170105678969235
+efficientnet-b7,std,KMeans,{'n_clusters': 15},[ 1  4 14 ... 12 12 14],15,29.45426766350078,5.560405879337609
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[ 0  0 -1 ... -1 -1  0],2,74.64579187666742,20.025296856317944
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[ 0  0 -1 ... -1 -1  0],2,74.63042929584411,20.0289289425487
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[ 0  0 -1 ... -1 -1  0],2,74.61773763189875,20.032258276401006
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[ 0  0 -1 ... -1 -1  0],2,74.63267392384273,20.034367832517265
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[ 0  0 -1 ... -1 -1  0],2,74.62673678709155,20.038401682967134
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[ 0  0 -1 ... -1 -1  0],2,74.64330929049716,20.0450974909006
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[ 0  0 -1 ... -1 -1  0],2,74.63006999191661,20.060416271699218
+efficientnet-b7,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[-1  0 -1 ... -1 -1  0],2,62.823505740308136,22.782446079346332
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[-1  0 -1 ... -1 -1  0],2,62.83035027680914,22.77374701111998
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[-1  0 -1 ... -1 -1  0],2,62.78322006040698,22.769322582150437
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[-1  0 -1 ... -1 -1  0],2,62.77399463556362,22.75212389957434
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[-1  0 -1 ... -1 -1  0],2,62.724769722557355,22.73483020948962
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[-1  0 -1 ... -1 -1  0],2,62.60210432944725,22.71972924005063
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[-1  0 -1 ... -1 -1  0],2,62.399098127569964,22.68546166275882
+efficientnet-b7,std,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,std,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 8},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 16},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 32},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,norm,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 8},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 16},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 32},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+efficientnet-b7,std,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,577.2060871380562,4.105117279774246
+osnet,norm,KMeans,{'n_clusters': 3},[0 0 0 ... 0 1 1],3,1057.1808024096042,4.643684635147488
+osnet,norm,KMeans,{'n_clusters': 4},[1 1 0 ... 1 0 0],4,917.9592422587218,5.345485064158574
+osnet,norm,KMeans,{'n_clusters': 5},[2 2 3 ... 3 0 0],5,836.1196108622148,5.167643740072307
+osnet,norm,KMeans,{'n_clusters': 6},[4 4 3 ... 3 2 5],6,763.6219126532122,5.105675124662594
+osnet,norm,KMeans,{'n_clusters': 7},[3 3 2 ... 3 4 1],7,666.4681156073394,4.848393332970138
+osnet,norm,KMeans,{'n_clusters': 8},[5 5 6 ... 1 3 3],8,656.5312395530219,4.858103658952926
+osnet,norm,KMeans,{'n_clusters': 9},[3 3 1 ... 3 1 4],9,560.8554806151898,4.770245457102065
+osnet,norm,KMeans,{'n_clusters': 10},[9 9 4 ... 7 0 1],10,559.6645720553796,4.6535407006508915
+osnet,norm,KMeans,{'n_clusters': 11},[5 5 3 ... 7 4 4],11,530.0971642634233,4.791624477722669
+osnet,norm,KMeans,{'n_clusters': 12},[ 4  4  6 ...  7 11  1],12,508.82072006168954,4.600811894466714
+osnet,norm,KMeans,{'n_clusters': 13},[3 3 6 ... 8 4 5],13,477.80421996868995,4.28643813680598
+osnet,norm,KMeans,{'n_clusters': 14},[ 9  9  3 ...  6  4 10],14,472.93629386759744,4.130979995502575
+osnet,norm,KMeans,{'n_clusters': 15},[ 1  7 14 ...  5  9 12],15,455.21235522648914,4.186891575439596
+osnet,std,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,250.36029415639777,12.588893810806335
+osnet,std,KMeans,{'n_clusters': 3},[0 0 0 ... 0 0 0],3,211.8775186325109,3.501386633292404
+osnet,std,KMeans,{'n_clusters': 4},[2 2 1 ... 1 2 2],4,225.71111142891195,7.495683507952812
+osnet,std,KMeans,{'n_clusters': 5},[2 2 4 ... 3 2 2],5,223.16675687981459,8.589909139093853
+osnet,std,KMeans,{'n_clusters': 6},[5 5 2 ... 1 4 2],6,225.30813859545177,7.689572631888261
+osnet,std,KMeans,{'n_clusters': 7},[4 4 3 ... 6 1 4],7,214.37108290658492,7.225901574390456
+osnet,std,KMeans,{'n_clusters': 8},[1 3 7 ... 3 1 1],8,218.19518927716592,6.780178204300278
+osnet,std,KMeans,{'n_clusters': 9},[1 1 3 ... 3 1 1],9,214.09900934880864,5.4708487901564675
+osnet,std,KMeans,{'n_clusters': 10},[8 8 9 ... 3 9 9],10,216.62374213745642,5.799769114874712
+osnet,std,KMeans,{'n_clusters': 11},[10  4  3 ...  8 10 10],11,211.57804950722152,6.191367648786123
+osnet,std,KMeans,{'n_clusters': 12},[10  5  6 ...  6  3  3],12,203.7346005614956,5.9227772841690784
+osnet,std,KMeans,{'n_clusters': 13},[ 5  5  4 ...  4 10 10],13,214.16248713578838,5.71613356993656
+osnet,std,KMeans,{'n_clusters': 14},[1 3 6 ... 1 1 1],14,208.17669677571342,5.113925724962714
+osnet,std,KMeans,{'n_clusters': 15},[13  6  3 ... 12 13 13],15,212.52886513019524,5.4262437160944925
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[ 0  0 23 ...  0 -1  0],39,39.18989263345956,2.2154869927438825
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],2,7.840547823614988,2.1205189268689746
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[ 0  0 -1 ...  0 -1  0],14,74.96610819190101,3.1395620024421236
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,7.840547823614988,2.1205189268689746
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[ 0  0 -1 ...  0 -1  0],6,128.88517509428416,4.86593022527875
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,7.840547823614988,2.1205189268689746
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[ 0  0 -1 ...  0 -1  0],5,182.59380528242298,5.069501331767175
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,15.459471453244351,1.9068149524330804
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[ 0  0 -1 ...  0 -1  0],3,283.96341266649677,6.802102392397135
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,14.808030290386176,2.1186375657891823
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[ 0  0 -1 ...  0 -1  0],2,530.2026357505755,8.269677854007686
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,25.872725302009556,1.9725222650511856
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[ 0  0 -1 ...  0 -1  0],2,551.0387077428842,7.305535802580525
+osnet,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,25.012500548562805,2.1094963233730857
+osnet,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],50,10.844390591547175,2.4591474344566957
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],5,44.265072796617964,4.147506818609375
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],11,18.847318805030238,3.2225356092275472
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],5,72.14535543997518,4.327624138127158
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],2,66.28719977573928,4.473561141972083
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,129.51137060690195,7.758030698121485
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],2,49.70266342502006,3.936250293248535
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,173.14591914755908,7.784308060772906
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,184.54318313704138,7.914036004573925
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,186.91057052119095,8.000609901468113
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,187.15441183660155,8.084424685212916
+osnet,std,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,std,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+osnet,norm,HDBSCAN,{'min_cluster_size': 8},[11 11 11 ... 11 11 11],18,66.35359000448696,2.4740206024891984
+osnet,norm,HDBSCAN,{'min_cluster_size': 16},[5 5 5 ... 5 5 5],10,90.42694989683373,3.065217791616652
+osnet,norm,HDBSCAN,{'min_cluster_size': 32},[17 17 17 ... 17 17 17],21,100.45177755636858,3.012364278425011
+osnet,norm,HDBSCAN,{'min_cluster_size': 64},[ 0  0 -1 ...  0  0  0],3,270.5862623695866,7.2749299100589795
+osnet,norm,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,norm,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,HDBSCAN,{'min_cluster_size': 8},[13 13 13 ... 13 13 13],17,59.14564910743238,3.0887145909294054
+osnet,std,HDBSCAN,{'min_cluster_size': 16},[3 3 3 ... 3 3 3],8,81.18144185963584,4.4184741722226715
+osnet,std,HDBSCAN,{'min_cluster_size': 32},[0 0 0 ... 0 0 0],3,70.96364020086257,6.224486866692414
+osnet,std,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+osnet,std,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,1439.5807288266944,5.294130067698819
+vdc_color,norm,KMeans,{'n_clusters': 3},[2 2 2 ... 2 2 2],3,720.5880321684951,3.801036335040706
+vdc_color,norm,KMeans,{'n_clusters': 4},[2 1 1 ... 2 1 2],4,731.5891495368595,7.304994724283796
+vdc_color,norm,KMeans,{'n_clusters': 5},[4 2 2 ... 4 2 3],5,606.3191244286619,6.444382056433783
+vdc_color,norm,KMeans,{'n_clusters': 6},[2 2 2 ... 2 2 3],6,514.7727613975867,5.9290220701377345
+vdc_color,norm,KMeans,{'n_clusters': 7},[3 4 5 ... 3 5 6],7,461.25472311159,5.385834890061632
+vdc_color,norm,KMeans,{'n_clusters': 8},[7 0 3 ... 7 3 3],8,430.81088219875755,5.795495300756173
+vdc_color,norm,KMeans,{'n_clusters': 9},[2 3 1 ... 2 1 1],9,432.89159719541243,5.709857704336539
+vdc_color,norm,KMeans,{'n_clusters': 10},[9 4 4 ... 7 5 5],10,387.5606909888772,5.3151783039523846
+vdc_color,norm,KMeans,{'n_clusters': 11},[ 4  2  5 ...  0 10 10],11,388.0622984295833,5.535095502182283
+vdc_color,norm,KMeans,{'n_clusters': 12},[ 9  1 11 ...  9 11 11],12,327.25810775986787,4.648423485498906
+vdc_color,norm,KMeans,{'n_clusters': 13},[ 7  2  8 ...  6  8 11],13,343.5285189695591,5.02546325771558
+vdc_color,norm,KMeans,{'n_clusters': 14},[ 7  9  9 ... 11 12 12],14,328.68837699121343,4.891224310605419
+vdc_color,norm,KMeans,{'n_clusters': 15},[8 2 1 ... 0 7 7],15,333.31980049280213,5.062561818034078
+vdc_color,norm,KMeans,{'n_clusters': 16},[ 7  1  8 ...  7 15 15],16,306.7277051329201,4.69569906309277
+vdc_color,norm,KMeans,{'n_clusters': 17},[ 8  2  9 ... 11  9  9],17,307.07894528365085,5.059329224562345
+vdc_color,norm,KMeans,{'n_clusters': 18},[ 8  2  2 ...  4 15 15],18,291.1644163729166,4.942917250555843
+vdc_color,norm,KMeans,{'n_clusters': 19},[ 8 10 16 ...  3  9  9],19,284.1052744819941,4.774650980230075
+vdc_color,norm,KMeans,{'n_clusters': 20},[10  1 12 ... 14 12 13],20,271.91433645122646,4.394689616935567
+vdc_color,norm,KMeans,{'n_clusters': 21},[19 11 20 ... 10 20 20],21,279.86384632114743,4.753659019657808
+vdc_color,norm,KMeans,{'n_clusters': 22},[ 0 11 19 ...  8  5  5],22,260.038234177644,4.523327568849066
+vdc_color,norm,KMeans,{'n_clusters': 23},[ 5 17  7 ...  9  7  1],23,250.6886306310319,4.605490514626217
+vdc_color,norm,KMeans,{'n_clusters': 24},[ 9  0  3 ...  2 17  5],24,244.46634218137862,4.46937074195722
+vdc_color,norm,KMeans,{'n_clusters': 25},[ 5 12  7 ... 15  7  2],25,241.24484362566065,4.429384940744274
+vdc_color,norm,KMeans,{'n_clusters': 26},[23  5  8 ...  6  9  9],26,227.91778506283399,4.1652956381177
+vdc_color,norm,KMeans,{'n_clusters': 27},[10 24  8 ...  0  5  5],27,228.7841554429406,4.390348002835809
+vdc_color,norm,KMeans,{'n_clusters': 28},[ 6  8 24 ... 10 24  5],28,220.6829603796996,4.224012203912463
+vdc_color,norm,KMeans,{'n_clusters': 29},[12 19 26 ...  0  7 18],29,222.87703611024116,4.421539588101489
+vdc_color,norm,KMeans,{'n_clusters': 30},[11 19 14 ...  5 13 22],30,224.1893698026476,4.472055569142254
+vdc_color,std,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,357.9278784147842,10.61320725813579
+vdc_color,std,KMeans,{'n_clusters': 3},[2 1 1 ... 2 1 2],3,162.86833343348974,7.612766108138092
+vdc_color,std,KMeans,{'n_clusters': 4},[1 1 1 ... 2 1 1],4,285.68659161773303,7.7100933830619365
+vdc_color,std,KMeans,{'n_clusters': 5},[1 2 2 ... 1 2 1],5,283.55771911325553,7.294476456604014
+vdc_color,std,KMeans,{'n_clusters': 6},[5 1 4 ... 3 1 5],6,295.82595516761614,7.226477422922503
+vdc_color,std,KMeans,{'n_clusters': 7},[4 6 5 ... 3 6 4],7,242.06046250341714,6.478893653176421
+vdc_color,std,KMeans,{'n_clusters': 8},[5 0 1 ... 3 1 1],8,285.7408983431402,6.282150911388215
+vdc_color,std,KMeans,{'n_clusters': 9},[3 8 5 ... 6 8 8],9,272.91738972596136,6.103244867867673
+vdc_color,std,KMeans,{'n_clusters': 10},[5 1 7 ... 0 7 7],10,249.3316658760688,5.607685809646147
+vdc_color,std,KMeans,{'n_clusters': 11},[9 4 7 ... 5 6 9],11,242.81348493156838,5.762567771337069
+vdc_color,std,KMeans,{'n_clusters': 12},[8 7 3 ... 2 3 3],12,235.03456320966615,5.484868678483312
+vdc_color,std,KMeans,{'n_clusters': 13},[10  2  5 ...  3  9 10],13,222.00447693035463,5.107988152046923
+vdc_color,std,KMeans,{'n_clusters': 14},[ 9  2 12 ... 11  5  5],14,210.34560145146185,5.024860413083352
+vdc_color,std,KMeans,{'n_clusters': 15},[ 8  2 11 ...  7  0  0],15,237.4004132619494,5.414090031800685
+vdc_color,std,KMeans,{'n_clusters': 16},[ 0  2 15 ...  5 12 12],16,228.3646376790858,5.342514495248537
+vdc_color,std,KMeans,{'n_clusters': 17},[ 8 12  1 ...  4  1 13],17,218.0098854935426,5.144018156161242
+vdc_color,std,KMeans,{'n_clusters': 18},[ 8 16 10 ...  0 10  5],18,214.28634312082892,5.06467359952573
+vdc_color,std,KMeans,{'n_clusters': 19},[17  7  0 ...  6  0  8],19,213.67439480414154,5.181500286543192
+vdc_color,std,KMeans,{'n_clusters': 20},[12 11 16 ... 10 15 15],20,207.64403351524277,4.8987930609839125
+vdc_color,std,KMeans,{'n_clusters': 21},[ 6  0 12 ... 10  2  1],21,207.48633355623937,5.017055326790664
+vdc_color,std,KMeans,{'n_clusters': 22},[ 5  2 18 ... 11 13 13],22,194.12080905512525,4.680512582495044
+vdc_color,std,KMeans,{'n_clusters': 23},[20  8  5 ...  3  5 12],23,184.70509100840385,4.5050340443407215
+vdc_color,std,KMeans,{'n_clusters': 24},[ 5 12 10 ...  2 10 15],24,194.45481114487296,4.744728440310406
+vdc_color,std,KMeans,{'n_clusters': 25},[ 6 17 14 ... 15 19 19],25,183.0321808942074,4.546624676552393
+vdc_color,std,KMeans,{'n_clusters': 26},[ 9 17  2 ... 23  2 15],26,179.23466367245177,4.427718580682712
+vdc_color,std,KMeans,{'n_clusters': 27},[26  0  2 ... 17  2 18],27,173.09275837197728,4.430750167422746
+vdc_color,std,KMeans,{'n_clusters': 28},[ 2  8 19 ...  9 19  4],28,172.90332739390908,4.416332595390068
+vdc_color,std,KMeans,{'n_clusters': 29},[ 5 17 26 ...  2 26 24],29,172.23289297334665,4.4638860513698155
+vdc_color,std,KMeans,{'n_clusters': 30},[ 5 19 12 ...  2 20 20],30,173.01714810378311,4.43288582187665
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],3,86.19795469219399,10.374620408354177
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,172.78929572459393,14.46774370945513
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,176.50431711005743,14.494997390365805
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[ 0  0 -1 ...  0  0  0],2,179.98259162960517,14.51364992094347
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[ 0  0 -1 ...  0  0  0],2,182.61992289456782,14.551271980949593
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[ 0  0 -1 ... -1  0  0],2,185.9606898326252,14.563256922008778
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[ 0  0 -1 ... -1  0  0],2,187.50698151799511,14.634817943615916
+vdc_color,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,5.5139264717387775,0.419597045202594
+vdc_color,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],8,24.154034721979695,4.314926579461523
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],2,36.22231720500325,3.806199755954694
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],2,110.44481723860477,9.955558368313422
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,36.18094736105648,3.8373873393094744
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],5,35.34078240756058,5.453260022571217
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,39.44433551487612,3.81136169124404
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],2,81.78751504789712,8.278831334860492
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,40.31603700095111,3.8540299002750036
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],2,55.64307447079514,7.410905583548202
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,42.52808130491876,3.849881126096707
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],2,28.133158870622214,6.54210061383477
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,47.59006633616259,3.7459248792298543
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,50.21544073960506,3.706132209061699
+vdc_color,std,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,std,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 8},[-1 -1 -1 ... -1 -1 -1],3,63.90285724729619,7.969126714838975
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 16},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 32},[-1  0 -1 ... -1 -1  0],3,88.84432463109691,9.717434663007245
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,norm,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,HDBSCAN,{'min_cluster_size': 8},[ 1  1 -1 ... -1  1  1],3,99.07561790285531,8.821774770367112
+vdc_color,std,HDBSCAN,{'min_cluster_size': 16},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,HDBSCAN,{'min_cluster_size': 32},[-1  1 -1 ... -1 -1  1],4,67.91816524484261,7.818343726261549
+vdc_color,std,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_color,std,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 0 1 1],2,759.2711786784929,7.264994922590354
+vdc_type,norm,KMeans,{'n_clusters': 3},[1 1 1 ... 0 2 2],3,558.321280056186,6.802261623198727
+vdc_type,norm,KMeans,{'n_clusters': 4},[1 1 2 ... 3 1 1],4,486.8774540176615,7.122471184130483
+vdc_type,norm,KMeans,{'n_clusters': 5},[4 4 1 ... 2 0 0],5,452.1400878779097,6.811758440168433
+vdc_type,norm,KMeans,{'n_clusters': 6},[3 3 3 ... 2 5 5],6,403.2133931690699,6.53393533772843
+vdc_type,norm,KMeans,{'n_clusters': 7},[0 0 2 ... 3 2 2],7,313.7740159112922,5.562059555088821
+vdc_type,norm,KMeans,{'n_clusters': 8},[1 1 3 ... 7 3 3],8,338.92320973817823,5.659843783956687
+vdc_type,norm,KMeans,{'n_clusters': 9},[0 0 6 ... 8 7 7],9,343.36050916742846,5.391708443887755
+vdc_type,norm,KMeans,{'n_clusters': 10},[0 0 9 ... 8 5 9],10,331.8962728016327,5.442425776789518
+vdc_type,norm,KMeans,{'n_clusters': 11},[ 6  6  2 ... 10  0  0],11,297.3754109354065,5.202129225595025
+vdc_type,norm,KMeans,{'n_clusters': 12},[ 8  8  0 ... 10 11  0],12,290.08334818842155,5.085659450935604
+vdc_type,norm,KMeans,{'n_clusters': 13},[6 6 5 ... 0 9 5],13,301.9122229340777,5.275267050199752
+vdc_type,norm,KMeans,{'n_clusters': 14},[ 9 11  0 ...  8 13 13],14,288.64457007362483,4.959417903094136
+vdc_type,norm,KMeans,{'n_clusters': 15},[ 6  6 10 ...  2 14  9],15,286.474594973349,5.056886789478832
+vdc_type,std,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,199.15427403754282,2.0883434529456073
+vdc_type,std,KMeans,{'n_clusters': 3},[1 1 1 ... 1 1 1],3,221.4229112922975,8.56873781474408
+vdc_type,std,KMeans,{'n_clusters': 4},[0 0 0 ... 0 0 0],4,144.62471929864464,2.73201531724799
+vdc_type,std,KMeans,{'n_clusters': 5},[3 3 0 ... 3 4 4],5,219.4175400168914,9.161339295130352
+vdc_type,std,KMeans,{'n_clusters': 6},[3 3 3 ... 0 3 3],6,183.67894675979375,7.642767187711519
+vdc_type,std,KMeans,{'n_clusters': 7},[1 1 0 ... 2 1 1],7,192.00950048488602,6.7494897874511866
+vdc_type,std,KMeans,{'n_clusters': 8},[6 6 0 ... 4 3 3],8,214.33131763802862,7.5424922625357675
+vdc_type,std,KMeans,{'n_clusters': 9},[2 2 1 ... 5 8 8],9,216.82365919547703,6.60135057451454
+vdc_type,std,KMeans,{'n_clusters': 10},[8 8 4 ... 2 4 4],10,222.8331036325324,6.229290219686499
+vdc_type,std,KMeans,{'n_clusters': 11},[ 8  8  8 ... 10  2  2],11,199.43479234556108,5.958096247779918
+vdc_type,std,KMeans,{'n_clusters': 12},[ 4  4  8 ...  0 11 11],12,213.5608268604192,6.343336512361744
+vdc_type,std,KMeans,{'n_clusters': 13},[2 2 8 ... 0 3 3],13,211.33526424225423,6.192113743859424
+vdc_type,std,KMeans,{'n_clusters': 14},[12 12  4 ...  7 11 11],14,195.3007632592151,5.710816761113614
+vdc_type,std,KMeans,{'n_clusters': 15},[12 12 10 ... 14  9  9],15,194.4962446387109,5.93421819359419
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[ 0  0  0 ...  0 -1 -1],9,30.786194482835423,4.783579858625384
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],2,26.142021127808533,2.2260004335563295
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[ 0  0  0 ...  0 -1 -1],5,52.414134160338584,7.274508904128702
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,33.10302992770996,2.11224736160855
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[ 0  0 -1 ...  0 -1 -1],3,99.195071181847,10.746866759461149
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,36.14676088276427,2.162483694353395
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[ 0  0 -1 ...  0 -1 -1],2,178.88339785225628,15.078952085680966
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,54.164609485046505,1.99717695291755
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[ 0  0 -1 ...  0 -1 -1],2,181.415733775335,14.963860641757188
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,57.24116628372528,1.9750670277985274
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[ 0  0 -1 ... -1 -1 -1],2,182.63169619914945,14.678002789674656
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,56.61927761278233,2.084929418563906
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[ 0  0 -1 ... -1 -1 -1],2,171.46188389440974,14.580522119907684
+vdc_type,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,56.61927761278233,2.084929418563906
+vdc_type,norm,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 8.0}",[-1 -1 -1 ... -1 -1 -1],23,8.082291059435244,2.5389886414955654
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],2,106.89150493793002,6.234494407264383
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 8.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 16.0}",[-1 -1 -1 ... -1 -1 -1],5,7.474315181345011,2.9493881353628337
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,118.45353377118714,6.321613874422079
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 32.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,130.87900572131122,6.384528517666837
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 64.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,135.2177542606873,6.558345822070809
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 128.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,138.18075155351127,6.671827599405114
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 256.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,138.23296104677272,6.789219285954442
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.25, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 0.5, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 1.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 2.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 4.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 8.0, 'min_samples': 512.0}",[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,DBSCAN,"{'eps': 16.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,138.8765111999809,6.917396504483535
+vdc_type,std,DBSCAN,"{'eps': 32.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],2,12.256092424335634,1.1374028393989952
+vdc_type,std,DBSCAN,"{'eps': 64.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 128.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 256.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,std,DBSCAN,"{'eps': 512.0, 'min_samples': 512.0}",[0 0 0 ... 0 0 0],1,,
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 8},[ 3  3  3 ...  3 -1 -1],6,44.34171336373746,6.331630228925037
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 16},[ 1 -1 -1 ... -1 -1 -1],4,40.21554346710629,7.689986748664467
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 32},[ 2  2  2 ...  2 -1 -1],5,57.19083682497356,8.486809477539575
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,norm,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,HDBSCAN,{'min_cluster_size': 8},[ 4  4  4 ...  4 -1 -1],7,36.00819237374591,5.878211219864939
+vdc_type,std,HDBSCAN,{'min_cluster_size': 16},[ 1 -1 -1 ... -1 -1 -1],4,38.664474873979636,7.853253724382248
+vdc_type,std,HDBSCAN,{'min_cluster_size': 32},[ 0  0  0 ...  0 -1 -1],3,76.25706435163396,11.438804892712787
+vdc_type,std,HDBSCAN,{'min_cluster_size': 64},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,HDBSCAN,{'min_cluster_size': 128},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,HDBSCAN,{'min_cluster_size': 256},[-1 -1 -1 ... -1 -1 -1],1,,
+vdc_type,std,HDBSCAN,{'min_cluster_size': 512},[-1 -1 -1 ... -1 -1 -1],1,,

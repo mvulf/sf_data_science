@@ -1,0 +1,30 @@
+descriptor,cluster_class,cluster_class_params,labels,n_clusters,calinski_harabasz_score,davies_bouldin_score
+efficientnet-b7,KMeans,{'n_clusters': 6},[3 3 3 ... 1 2 1],6,323.86529921121996,7.0667027494873365
+efficientnet-b7,KMeans,{'n_clusters': 27},[11 11 11 ... 12  5 23],27,99.54564240257653,3.0370195090458454
+efficientnet-b7,AgglomerativeClustering,{'n_clusters': 2},[0 0 0 ... 0 0 0],2,3.0939251661661484,0.5635128146930622
+efficientnet-b7,DBSCAN,"{'eps': 2, 'min_samples': 8}",[0 0 0 ... 0 0 0],2,188.10950551063112,13.901658254161394
+osnet,KMeans,{'n_clusters': 2},[0 0 0 ... 0 0 0],2,8826.276096862604,4.704842180018441
+osnet,KMeans,{'n_clusters': 21},[10 10 10 ...  3 10 10],21,2047.33831398337,3.5512952125337334
+osnet,AgglomerativeClustering,{'n_clusters': 7},[0 0 0 ... 0 0 0],7,5.8503255919703925,0.5457275844740198
+osnet,AgglomerativeClustering,{'n_clusters': 6},[0 0 0 ... 0 0 0],6,6.233521912824943,0.5543048752372716
+osnet,DBSCAN,"{'eps': 1, 'min_samples': 256}",[0 0 0 ... 0 0 0],3,1236.0509228252158,6.1418824218222055
+osnet,DBSCAN,"{'eps': 1, 'min_samples': 32}",[0 0 0 ... 0 0 0],16,357.73168874775416,2.6211001925842337
+osnet,DBSCAN,"{'eps': 1, 'min_samples': 16}",[0 0 0 ... 0 0 0],29,192.12769288101214,2.2170089640955353
+osnet,HDBSCAN,{'min_cluster_size': 8},[4 4 4 ... 4 4 4],13,121.66965348553914,2.452705873873034
+osnet,HDBSCAN,{'min_cluster_size': 12},[3 3 3 ... 3 3 3],8,189.2888091525373,2.9579999873722382
+osnet,HDBSCAN,{'min_cluster_size': 16},[10 10 10 ... 10 10 10],21,204.53507906477486,2.2792543670314975
+osnet,HDBSCAN,{'min_cluster_size': 24},[0 0 0 ... 0 0 0],3,398.234947599261,4.917328403672492
+vdc_color,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,8249.978866544156,4.944694091639011
+vdc_color,KMeans,{'n_clusters': 25},[20 20 20 ... 10 13  0],25,1290.2840459431632,4.339850493932701
+vdc_color,AgglomerativeClustering,{'n_clusters': 2},[0 0 0 ... 0 0 0],2,5.620887412793384,0.4155273335807869
+vdc_color,DBSCAN,"{'eps': 1, 'min_samples': 256}",[0 0 0 ... 0 0 0],2,796.7283419840162,9.590158044591922
+vdc_color,HDBSCAN,{'min_cluster_size': 32},[0 0 0 ... 0 0 0],3,246.28347996297754,6.166338333637626
+vdc_color,HDBSCAN,{'min_cluster_size': 4},[1 1 1 ... 1 1 1],3,58.75191268090346,4.139935544432259
+vdc_type,KMeans,{'n_clusters': 2},[1 1 1 ... 0 0 0],2,4437.924404531981,6.688268884261231
+vdc_type,KMeans,{'n_clusters': 29},[13 13 13 ...  3  6 24],29,1016.9562476138843,4.4607903333036
+vdc_type,AgglomerativeClustering,{'n_clusters': 3},[0 0 0 ... 0 0 0],3,30.002067938235438,0.5052988813590381
+vdc_type,AgglomerativeClustering,{'n_clusters': 2},[0 0 0 ... 0 0 0],2,32.25904966045736,0.17271867915750955
+vdc_type,DBSCAN,"{'eps': 1, 'min_samples': 256}",[0 0 0 ... 0 0 0],2,676.5408295328068,10.798240317017854
+vdc_type,HDBSCAN,{'min_cluster_size': 48},[0 0 0 ... 0 0 0],3,204.98489134997106,5.45922970994895
+vdc_type,HDBSCAN,{'min_cluster_size': 8},[1 1 1 ... 1 1 1],3,267.85910838383415,6.738350220828018
+vdc_type,HDBSCAN,{'min_cluster_size': 4},[0 0 0 ... 0 0 0],3,88.23398961484229,3.5345981804437674
