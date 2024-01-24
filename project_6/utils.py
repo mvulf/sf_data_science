@@ -427,6 +427,26 @@ def conduct_grid_search(
     return cluster_results 
 
 
+def display_models(full_df):
+    """ Display sorted by metric models grouped by descriptor
+
+    Args:
+        full_df (pd.DataFrame): DataFrame to eject sorted data
+    """
+    for descriptor in full_df['descriptor'].unique():
+        print(f'ДЕСКРИПТОР: {descriptor}')
+        df = full_df[full_df['descriptor'] == descriptor]
+        df = df[[
+            'cluster_class', 'cluster_class_params', 
+            'n_clusters', 'calinski_harabasz_score', 'davies_bouldin_score'
+        ]]
+        df = df.sort_values(
+            ['cluster_class', 'calinski_harabasz_score', 'davies_bouldin_score'],
+            ascending=[False, False, True]
+        )
+        
+        display(df)
+
 
 def countplot_clusters(full_df, sidesize=4):
     """ Plot clusters count

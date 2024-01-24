@@ -1,13 +1,14 @@
 descriptor,scaler,cluster_class,cluster_class_params,labels,n_clusters,calinski_harabasz_score,davies_bouldin_score
 efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,188.1911538935816,13.90222536194833
 efficientnet-b7,norm,DBSCAN,"{'eps': 2.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,188.2422874050031,13.903032594011652
-efficientnet-b7,norm,KMeans,{'n_clusters': 4},[1 1 1 ... 1 2 1],4,316.7414305868607,7.763113676543311
-efficientnet-b7,norm,KMeans,{'n_clusters': 5},[1 1 1 ... 1 4 1],5,235.34422809804522,6.611290313011702
-efficientnet-b7,norm,KMeans,{'n_clusters': 6},[3 3 3 ... 1 2 1],6,323.86579767202676,7.066456347145642
-efficientnet-b7,norm,KMeans,{'n_clusters': 7},[4 4 4 ... 4 2 4],7,260.43600057047524,6.279761419096412
-efficientnet-b7,norm,KMeans,{'n_clusters': 8},[3 3 3 ... 2 1 3],8,297.84643822479387,6.501123898445204
-efficientnet-b7,norm,KMeans,{'n_clusters': 9},[5 5 5 ... 4 7 5],9,260.3149662493134,5.9366197382672725
-efficientnet-b7,norm,KMeans,{'n_clusters': 10},[0 0 0 ... 0 2 0],10,106.21819390103161,3.6032581031041695
+efficientnet-b7,norm,KMeans,{'n_clusters': 3},[1 1 1 ... 1 1 1],3,1.607793235898015,0.7980159923912735
+efficientnet-b7,norm,KMeans,{'n_clusters': 4},[1 1 1 ... 1 2 1],4,316.746403958629,7.763142367638845
+efficientnet-b7,norm,KMeans,{'n_clusters': 5},[1 1 1 ... 1 4 1],5,235.36290517798014,6.611169858604794
+efficientnet-b7,norm,KMeans,{'n_clusters': 6},[3 3 3 ... 1 2 1],6,323.8740512422047,7.0664632868033905
+efficientnet-b7,norm,KMeans,{'n_clusters': 7},[4 4 4 ... 4 2 4],7,260.4336418077964,6.2797178271961345
+efficientnet-b7,norm,KMeans,{'n_clusters': 8},[3 3 3 ... 2 1 3],8,297.8425296088338,6.501464399610204
+efficientnet-b7,norm,KMeans,{'n_clusters': 9},[5 5 5 ... 4 7 5],9,260.32003135406813,5.93664880073243
+efficientnet-b7,norm,KMeans,{'n_clusters': 10},[0 0 0 ... 0 2 0],10,106.21819516719091,3.603253290054981
 osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],29,192.12769288101214,2.2170089640955353
 osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],12,378.1372866451616,2.857407133865505
 osnet,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],3,1236.0509228252158,6.1418824218222055
@@ -19,12 +20,12 @@ osnet,norm,HDBSCAN,{'min_cluster_size': 32},[4 4 4 ... 4 4 4],11,223.17391406988
 osnet,norm,HDBSCAN,{'min_cluster_size': 48},[0 0 0 ... 0 0 0],4,257.6972775723836,4.1407762418717935
 osnet,norm,HDBSCAN,{'min_cluster_size': 64},[9 9 9 ... 9 9 9],11,526.7308646180354,3.280837074052741
 osnet,norm,HDBSCAN,{'min_cluster_size': 96},[3 3 3 ... 3 3 3],6,643.774686789797,4.186495606159452
-osnet,norm,KMeans,{'n_clusters': 2},[0 0 0 ... 0 0 0],2,8826.279158691732,4.704837757919716
-osnet,norm,KMeans,{'n_clusters': 3},[2 2 2 ... 2 2 2],3,6114.897254081303,5.595935499835175
-osnet,norm,KMeans,{'n_clusters': 5},[1 1 1 ... 1 1 1],5,4631.713926675431,5.065176112134471
-osnet,norm,KMeans,{'n_clusters': 7},[4 4 4 ... 3 4 4],7,3757.843465394345,4.643727643842051
-osnet,norm,KMeans,{'n_clusters': 10},[1 1 1 ... 1 1 1],10,2799.041449258908,3.8889628404522916
-osnet,norm,KMeans,{'n_clusters': 14},[ 5 11  5 ...  1  5  5],14,2562.0384502311176,3.7824923327517284
+osnet,norm,KMeans,{'n_clusters': 2},[0 0 0 ... 0 0 0],2,8826.250727756284,4.704896035817377
+osnet,norm,KMeans,{'n_clusters': 3},[2 2 2 ... 2 2 2],3,6114.874996906553,5.595896509838302
+osnet,norm,KMeans,{'n_clusters': 5},[1 1 1 ... 1 1 1],5,4631.677823997334,5.06519853956533
+osnet,norm,KMeans,{'n_clusters': 7},[4 4 4 ... 3 4 4],7,3757.8455764608843,4.643745135595914
+osnet,norm,KMeans,{'n_clusters': 10},[1 1 1 ... 1 1 1],10,2799.0403265943946,3.888966808282633
+osnet,norm,KMeans,{'n_clusters': 14},[ 5 11  5 ...  1  5  5],14,2562.042221806872,3.7826178457926205
 vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 16.0}",[0 0 0 ... 0 0 0],3,353.3102354903147,6.972259259528639
 vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,759.1136745388734,9.452875763873559
 vdc_color,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 256.0}",[0 0 0 ... 0 0 0],2,796.7283419840162,9.590158044591922
@@ -34,15 +35,15 @@ vdc_color,norm,HDBSCAN,{'min_cluster_size': 8},[1 1 1 ... 1 1 1],4,172.176196152
 vdc_color,norm,HDBSCAN,{'min_cluster_size': 24},[-1 -1 -1 ... -1 -1 -1],3,147.68473159921217,6.066603572035741
 vdc_color,norm,HDBSCAN,{'min_cluster_size': 32},[0 0 0 ... 0 0 0],3,246.28347996297754,6.166338333637626
 vdc_color,norm,HDBSCAN,{'min_cluster_size': 48},[1 1 1 ... 1 1 1],4,299.7382805963037,6.57166714344831
-vdc_color,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,8249.978557155682,4.944694355716081
-vdc_color,norm,KMeans,{'n_clusters': 3},[0 0 0 ... 0 0 0],3,5180.120789919611,6.161023411458712
-vdc_color,norm,KMeans,{'n_clusters': 5},[0 0 0 ... 0 3 0],5,3571.5909546622506,6.385129763739611
-vdc_color,norm,KMeans,{'n_clusters': 7},[5 5 5 ... 1 4 5],7,2873.7006468236214,5.728402118181618
-vdc_color,norm,KMeans,{'n_clusters': 10},[2 2 2 ... 2 8 2],10,2187.7796778973966,5.266522904707898
-vdc_color,norm,KMeans,{'n_clusters': 12},[ 6  6  6 ... 11  4  6],12,2000.3514054312452,5.376976146580496
-vdc_color,norm,KMeans,{'n_clusters': 16},[12 12 12 ... 14  3 12],16,1729.042729220264,4.96474374805581
-vdc_color,norm,KMeans,{'n_clusters': 20},[15 15 15 ...  6  9  1],20,1545.5427864601884,4.706533739869071
-vdc_color,norm,KMeans,{'n_clusters': 26},[20 20 20 ...  6  4  0],26,1259.3798856308952,4.4184733405924215
+vdc_color,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 1 1 1],2,8249.985166114495,4.944693253265837
+vdc_color,norm,KMeans,{'n_clusters': 3},[0 0 0 ... 0 0 0],3,5180.114846654656,6.161023838610549
+vdc_color,norm,KMeans,{'n_clusters': 5},[0 0 0 ... 0 3 0],5,3571.5896126652333,6.385100638807768
+vdc_color,norm,KMeans,{'n_clusters': 7},[5 5 5 ... 1 4 5],7,2873.707137736129,5.728264811078923
+vdc_color,norm,KMeans,{'n_clusters': 10},[2 2 2 ... 2 8 2],10,2187.8425283650117,5.2680802702320575
+vdc_color,norm,KMeans,{'n_clusters': 12},[ 6  6  6 ... 11  4  6],12,2000.3497859424012,5.376853526407849
+vdc_color,norm,KMeans,{'n_clusters': 16},[12 12 12 ... 14  3 12],16,1729.0569166328778,4.964594655393244
+vdc_color,norm,KMeans,{'n_clusters': 20},[15 15 15 ...  6  9  1],20,1545.5420424851225,4.706450920560995
+vdc_color,norm,KMeans,{'n_clusters': 26},[20 20 20 ...  6  4  0],26,1259.382167942248,4.418782697524967
 vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 32.0}",[0 0 0 ... 0 0 0],3,307.19328858548715,7.351312019831377
 vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 64.0}",[0 0 0 ... 0 0 0],2,603.2743458905725,10.361602375245022
 vdc_type,norm,DBSCAN,"{'eps': 1.0, 'min_samples': 128.0}",[0 0 0 ... 0 0 0],2,646.1762383533002,10.543255652491977
@@ -56,9 +57,9 @@ vdc_type,norm,HDBSCAN,{'min_cluster_size': 16},[0 0 0 ... 0 0 0],3,271.448543775
 vdc_type,norm,HDBSCAN,{'min_cluster_size': 24},[0 0 0 ... 0 0 0],3,268.18514621179213,6.37160590732951
 vdc_type,norm,HDBSCAN,{'min_cluster_size': 32},[0 0 0 ... 0 0 0],3,204.98489134997106,5.45922970994895
 vdc_type,norm,HDBSCAN,{'min_cluster_size': 48},[0 0 0 ... 0 0 0],3,204.98489134997106,5.45922970994895
-vdc_type,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 0 0 0],2,4437.906130374533,6.688253046495177
-vdc_type,norm,KMeans,{'n_clusters': 3},[1 1 1 ... 0 0 0],3,2985.9100331054183,6.976043724197473
-vdc_type,norm,KMeans,{'n_clusters': 5},[4 4 4 ... 3 2 0],5,2250.576195203899,6.751027463437045
-vdc_type,norm,KMeans,{'n_clusters': 7},[5 4 5 ... 1 3 1],7,1911.1074007334284,6.181836609278925
-vdc_type,norm,KMeans,{'n_clusters': 9},[7 8 7 ... 4 5 4],9,1708.7213250358282,5.958821125724311
-vdc_type,norm,KMeans,{'n_clusters': 14},[ 0 10  0 ...  3 12  7],14,1428.9009338483736,5.202181631667598
+vdc_type,norm,KMeans,{'n_clusters': 2},[1 1 1 ... 0 0 0],2,4437.918366175224,6.688266093051936
+vdc_type,norm,KMeans,{'n_clusters': 3},[1 1 1 ... 0 0 0],3,2985.904863882226,6.97579289933956
+vdc_type,norm,KMeans,{'n_clusters': 5},[4 4 4 ... 3 2 0],5,2250.559043586638,6.750806080946544
+vdc_type,norm,KMeans,{'n_clusters': 7},[5 4 5 ... 1 3 1],7,1911.1052967904632,6.181947564022489
+vdc_type,norm,KMeans,{'n_clusters': 9},[7 8 7 ... 4 5 4],9,1708.7473475605743,5.959310188770797
+vdc_type,norm,KMeans,{'n_clusters': 14},[ 0 10  0 ...  3 12  7],14,1428.9077313597227,5.202231486297366
