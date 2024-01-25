@@ -344,7 +344,7 @@ def conduct_grid_search(
         data_keeper.del_data() 
         
         # Load descriptor
-        data_keeper.load_descriptor_PCA(
+        data_keeper.sssssd(
             name=descriptor_name,
             data_fraction=data_fraction,
             random_state=random_state,
@@ -427,15 +427,15 @@ def conduct_grid_search(
     return cluster_results 
 
 
-def display_models(full_df):
+def display_models(cluster_df):
     """ Display sorted by metric models grouped by descriptor
 
     Args:
-        full_df (pd.DataFrame): DataFrame to eject sorted data
+        cluster_df (pd.DataFrame): DataFrame to eject sorted data
     """
-    for descriptor in full_df['descriptor'].unique():
+    for descriptor in cluster_df['descriptor'].unique():
         print(f'ДЕСКРИПТОР: {descriptor}')
-        df = full_df[full_df['descriptor'] == descriptor]
+        df = cluster_df[cluster_df['descriptor'] == descriptor]
         df = df[[
             'cluster_class', 'cluster_class_params', 
             'n_clusters', 'calinski_harabasz_score', 'davies_bouldin_score'
@@ -448,17 +448,17 @@ def display_models(full_df):
         display(df)
 
 
-def countplot_clusters(full_df, sidesize=4):
+def countplot_clusters(cluster_df, sidesize=4):
     """ Plot clusters count
 
     Args:
-        full_df (pd.Dataframe): Dataframe with descriptor, models 
+        cluster_df (pd.Dataframe): Dataframe with descriptor, models 
             and obtained clusters
         sidesize (int): Width of the one plot. Defaults to 4.
     """
 
-    for descriptor in full_df['descriptor'].unique():
-        df = full_df[full_df['descriptor'] == descriptor]
+    for descriptor in cluster_df['descriptor'].unique():
+        df = cluster_df[cluster_df['descriptor'] == descriptor]
         fig, axes = plt.subplots(
             (df.shape[0]+1)//2, 2, 
             figsize=(2*sidesize, df.shape[0]//2*sidesize)
@@ -481,3 +481,85 @@ def countplot_clusters(full_df, sidesize=4):
             
             ax.set_title(row_name)
         plt.tight_layout()
+        
+        
+
+def get_cluster_visualization(
+    cluster_df:pd.DataFrame,
+    data_keeper=DataKeeper(),
+    n_components=2,
+    thresh = None, # (-10, 10),
+    sidesize=4,
+):
+    """ Visualize clusters in 2D-(or 3D-)plots by UMAP-dimensionality reducing
+
+    Args:
+        cluster_df (pd.DataFrame): DataFrame for visualization
+        data_keeper (DataKeeper): Object for data control. Defaults to DataKeeper().
+        n_components (int): Number of UMAP components. Defaults to 2.
+        thresh (tuple): (Lower boundary, Upper boundary). Defaults to None.
+        sidesize (int): Width of the image. Defaults to 4.
+    """
+    for descriptor in cluster_df['descriptor'].unique():
+        df = cluster_df[cluster_df['descriptor'] == descriptor]
+        if n_components == 2:
+            fig, axes = plt.subplots(
+                (df.shape[0]+1)//2, 2, 
+                figsize=(2*sidesize, df.shape[0]//2*sidesize)
+            )
+        elif n_components == 3:
+            fig, axes = plt.subplots(
+                (df.shape[0]+1)//2, 2, 
+                figsize=(2*sidesize, df.shape[0]//2*sidesize),
+                subplot_kw={"projection": "3d"},
+            )
+        else:
+            raise ValueError('n_components can be only 2 or 3')
+            
+        # Load and normalize data
+        data_keeper.load_descriptor_PCA(descriptor)
+        data_keeper.get_norm_scaled_descriptor()
+        data_keeper.del_PCA()
+        # Prepare data for visualization
+        umap = UMAP(n_components=n_components)
+        X = umap.fit_transform(data_keeper.descriptors_scaled['norm'])
+        X = X.get()
+        # Get thresholded data
+        if thresh:
+            mask = ((X>thresh[0]) & (X<thresh[1])).all(axis=1)
+        else:
+            mask = np.full(X.shape[0], True)
+        X = X[mask]
+
+        for i in range(df.shape[0]):
+            ax = axes.flat[i]
+            row = df.iloc[i]
+            if n_components == 2:
+                sns.scatterplot(
+                    x = X[:, 0],
+                    y = X[:, 1],
+                    hue=row['labels'][mask],
+                    s=2,
+                    ax=ax
+                )
+            else:
+                scatter = ax.scatter(
+                    xs=X[:, 0],
+                    ys=X[:, 1],
+                    zs=X[:, 2],
+                    c=row['labels'][mask],
+                    s=2,
+                )
+                legend = ax.legend(*scatter.legend_elements(), title="Clusters")
+                ax.add_artist(legend)
+            
+            row_lt = list(
+                row[['descriptor', 'cluster_class', 'cluster_class_params']].values
+            )
+            row_lt = list(map(str, row_lt))
+
+            row_name = '\n'.join(row_lt)
+            
+            ax.set_title(row_name)
+        plt.tight_layout()
+
