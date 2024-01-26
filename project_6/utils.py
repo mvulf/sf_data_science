@@ -296,15 +296,6 @@ class DataKeeper():
         self.descriptors_scaled['norm'] = self.norm_scaler.fit_transform(
             self.descriptor_PCA
         )
-    
-    
-    # def get_scaled_descriptors(
-    #     self,
-    # ):
-    #     """Get Norm- and Standard- scaled data
-    #     """
-    #     self.get_norm_scaled_descriptor()
-    #     self.get_std_scaled_descriptor()
 
 
 
@@ -344,7 +335,7 @@ def conduct_grid_search(
         data_keeper.del_data() 
         
         # Load descriptor
-        data_keeper.sssssd(
+        data_keeper.load_descriptor_PCA(
             name=descriptor_name,
             data_fraction=data_fraction,
             random_state=random_state,
@@ -427,11 +418,12 @@ def conduct_grid_search(
     return cluster_results 
 
 
-def display_models(cluster_df):
+def display_models(cluster_df, head_rows=None):
     """ Display sorted by metric models grouped by descriptor
 
     Args:
         cluster_df (pd.DataFrame): DataFrame to eject sorted data
+        head_rows (int): number of rows to display
     """
     for descriptor in cluster_df['descriptor'].unique():
         print(f'ДЕСКРИПТОР: {descriptor}')
@@ -444,8 +436,10 @@ def display_models(cluster_df):
             ['cluster_class', 'calinski_harabasz_score', 'davies_bouldin_score'],
             ascending=[False, False, True]
         )
-        
-        display(df)
+        if head_rows:
+            display(df.head(head_rows))
+        else:
+            display(df)
 
 
 def countplot_clusters(cluster_df, sidesize=4):
