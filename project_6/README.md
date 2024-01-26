@@ -1,6 +1,6 @@
 # Project 6. Image Clusterization
 
-## Content
+## README Content
 
 [1. Project description](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Project-description)
 
@@ -19,55 +19,140 @@
 
 :arrow_up:[to content](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Content)
 
-Booking data science study case. Problem: dishonest hotels that spin their ratings. Solution: design a reviewer score prediction model. If the predictions of the model differ greatly from the actual result, then perhaps the hotel is being dishonest and worth checking out.
+Один из ключевых проектов IntelliVision — Smart City/Transportation, система, обеспечивающая безопасность дорожного движения и более эффективную работу парковок. С помощью Smart City/Transportation можно контролировать сигналы светофоров и соблюдение ограничений скорости, определять виды транспортных средств, распознавать номерные знаки, считать автомобили и людей.
 
-[Main notebook](https://github.com/mvulf/sf_data_science/blob/main/project_6/PROJECT-6_Image Clusterization.ipynb)
+Для модификации и повышения эффективности системы Smart City/Transportation команде необходимо автоматизировать определение дополнительных параметров авто на изображении:
+
+* тип автомобиля (кузова),
+* ракурс снимка (вид сзади/спереди),
+* цвет автомобиля,
+* другие характеристики.
+
+#### Project content
+
+- [Main notebook](https://github.com/mvulf/sf_data_science/blob/main/project_6/PROJECT-6_Image_Clusterization.ipynb)
+
+- [Full notebook](https://drive.google.com/file/d/1-KLwHn3zzptxH2Sg_NPnaS-qkmiq3Zaz/view?usp=sharing)
+
+- data - папка с исходными данными
+
+- results - папка с результатами исследования:
+    - clusterization_scores.csv - результаты кластеризации на первой итерации
+    - refined_scores.csv - результаты кластеризации на второй итерации
+    - prefinal_scores.csv - результаты кластеризации на третьей итерации
+    - **best_clusterization.csv** - датасет с путями до изображений и метками, проставленными лучшей моделью кластеризации (см. Results ниже)
+    - *_n_clusters_scorе.png - графики зависимости метрик Калински-Харабаса и Дэвиса-Болдина от числа кластеров, построенных для различных дескрипторов
+    - *_countplot.png - столбчатые диаграммы распределения изображений по кластерам, построенные для каждого дескриптора и модели
+    - \*\_umap_*.png - изображения кластеров, построенных в 2D и 3D признаковом пространстве.
+    - vdc_color_cluster_[#].png - примеры фотограффий, относящихся к кластеру [#], выделенных на дескрипторе цвета авто 
+    - **vdc_type_cluster_[#].png** - примеры фотограффий, относящихся к кластеру [#], выделенных на дескрипторе типа авто
+
+- utils.py - модуль с написанными классами для работы с данными (с целью экономии памяти GPU): DataLoader, DataKeeper; также функции для поиска параметров (conduct_grid_search); отображения моделей, сортированных по метрикам (display_models); построения столбчатых диаграмм (countplot_clusters) и функции визуализации кластеров (get_cluster_visualization)
 
 ### Case details
 
+Необходима комплексная модель, которая могла бы одновременно находить на изображении автомобиль и определять все нужные параметры. Её нужно построить, однако многокомпонентная разметка новых данных по всем этим параметрам — очень трудозатратное занятие, которое стоит больших денег.
+
+При решении задачи разметки данных у команды возникла гипотеза, которая нуждается в исследовании.
+
+**Гипотеза:** разметку исходных данных можно эффективно провести с помощью методов кластеризации. 
+
+**Бизнес-задача**: исследовать возможность применения алгоритмов кластеризации для разметки новых данных и поиска выбросов.
+
+**Техническая задача** для специалиста в Data Science: построить модель кластеризации изображений на основе дескрипторов, выделяемых с помощью различных архитектур нейронных сетей, проинтерпретировать полученные результаты и выбрать модель или комбинацию моделей, которая выделяет наиболее пригодные для интерпретации признаки.
 
 **Conditions:**
-The model must predict the rating of the hotel according to the Booking website based on the data available in the dataset. MAPE-metrics of this model should be increased by Exploratory data analysis methods.
+
+*Давайте будем использовать небольшой набор моделей свёрточных нейронных сетей, обученных на различных датасетах и решающих различные задачи от классификации изображений по цвету до классификации типов транспортных средств, пропустим нашу базу изображений через каждую модель, но возьмём не выходной результат модели, а только промежуточное представление признаков (дескриптор), полученное на свёрточных слоях сети.*
+
+*Выполним такую операцию для всех изображений из набора данных, на основе полученных дескрипторов кластеризуем изображения, проинтерпретируем полученные кластеры и попробуем найти в них необходимую информацию.*
+
 
 **Quality metric**
-MAPE (mean absolute percentage error)
 
-**Practice:**
-- Data analysis and preparation by Pandas
-- Visualisation by Plotly and Seaborn
-- Exploratory data analysis (EDA)
-- Usage of the Random Forest Regressor from Scikit-learn
-- Improving the MAPE-metric by feature engineering and selection
+При выборе алгоритма кластеризации следует ориентироваться на внутренние метрики, а именно на индекс Калински — Харабаса (`calinski_harabasz_score`) и индекс Дэвиса — Болдина (`davies_bouldin_score`), а также на интерпретируемость кластеров и визуализацию.
+
+**Resources:**
+- SOFT:
+    - cupy, cuml - библиотеки для матричных вычислений и машинного обучения на графическом ядре (GPU)
+    - sklearn.metrics - метрики, взятые для кластеризации (см. выше)
+    - Matplotlib, Seaborn - визуализация
+
+- GPU: NVIDIA GEFORCE GTX 1080Ti (11 GB)
 
 :arrow_up:[to content](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Content)
 
 ### Data specification
-- DataFrame with 515000 Europe hotel reviews: input/hotels_train.csv and input/hotels_test.csv
-- Kaggle submission example: input/submission.csv
+
+Имеется набор из 416 314 изображений транспортных средств различных типов, цветов и снятых с разных ракурсов. Данные можно скачать [отсюда](https://drive.google.com/file/d/1vkQaj0Lr4Jwkumli7k9IzCtxFP1tIoXH/view).
+
+Исходная папка с данными имеет следующую структуру:
+
+```
+IntelliVision_case
+├─descriptors
+    └─efficientnet-b7.pickle
+    └─osnet.pickle
+    └─vdc_color.pickle
+    └─vdc_type.pickle
+├─row_data
+    └─veriwild.zip
+├─images_paths.csv 
+```
+
+* В папке `descriptors` содержатся дескрипторы, полученные для каждого из изображений с помощью соответствующих нейронных сетей, в формате numpy-массивов, сохранённых в файлах pickle:
+    * `efficientnet-b7.pickle` — дескрипторы, выделенные моделью классификации с архитектурой EfficientNet версии 7. Эта модель является свёрточной нейронной сетью, предобученной на на датасете ImageNet, в котором содержатся изображения более 1000 различных классов. Эта модель при обучении не видела датасета veriwiId. 
+
+    * `osnet.pickle` — дескрипторы, выделенные моделью OSNet, обученной для детектирования людей, животных и машин. Модель не обучалась на исходном датасете veriwiId.
+
+    * `vdc_color.pickle` — дескрипторы, выделенные моделью регрессии для определения цвета транспортных средств в формате RGB. Частично обучена на исходном датасете veriwild.
+    
+    * `vdc_type.pickle` — дескрипторы, выделенные моделью классификации транспортных средств по типу на десяти классах. Частично обучена на исходном датасете veriwild.
+
+* В папке `row_data` содержится zip-архив с исходными изображениями автомобилей. Распакуйте его содержимое в папку row_data. Архив содержит десять папок с изображениями, пронумерованных от 1 до 10. Каждая папка содержит подпапки, обозначенные пятизначными цифрами, например 36191. 
+
+В каждой из таких подпапок содержатся фотографии одного конкретного автомобиля с разных ракурсов, снятые с помощью дорожных видеокамер.
+
+* В файле `images_paths.csv` представлен список из полных путей до изображений. Он пригодится вам при анализе изображений, попавших в определённый кластер.
+
 
 :arrow_up:[to content](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Content)
 
 ### Project stages
-1. Preparations
 
-Import libraries and data. Сombining the data.
-
-2. Preliminary data analysis and data preparation
-
-Includes: data understanding, data preparation & cleaning, feature generating.
-
-3. Exploratory data analysis
-
-Consists of: Statistical hypothesis testing (normal-test), Feature Engineering (includes feature generating and feature transformation), Feature Selection (considers multicollinearity and feature importances tests)
-
-4. ML-Modeling
-
-Main stages: data splitting, Instant and fit model. Predict test values; Model quality assessment (MAPE); Final prediction for the output/submission.csv export.
+1. Для каждого типа дескрипторов необходимо:
+    * выполнить предобработку дескрипторов;
+    * произвести кластеризацию изображений на основе их дескрипторов, подобрав алгоритм и параметры кластеризации;
+    * сделать визуализацию полученных кластеров в 2D- или 3D-пространстве;
+    * проинтерпретировать полученные кластеры — в паре предложений сформулировать, какие изображения попали в каждый из кластеров.
+2. Сравнить между собой полученные кластеризации для каждого типа дескрипторов (по метрикам, визуализации и результатам интерпретации).
+3. Выполнить автоматизированный поиск выбросов среди изображений на основе дескрипторов.
 
 :arrow_up:[to content](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Content)
 
 ### Results
-In total, the dataset, after data processing and feature generation, had 90 features (out of 17 initial). Then by multicollinearity and feature importances tests features count has been decreased to 53 columns. And then best 15 of them were used for the Random Forest Regressor model.
+
+Проводилась кластеризация 416314 изображений с камер по их четырём дескрипторам.
+
+**Снижение размерности.** Для снижения размерности применялся метод главных компонент (PCA), причём количество признаков определялось "объясняемым" разбросом таким образом, чтобы значение было больше 60%. 
+
+**Масштабирование**. Проведённый в разделе 3.1. сравнительный анализ качества методов масштабирования для всех дескрипторов и моделей типа KMeans, DBSCAN и HDBSCAN показал, что наивысшие значения индекса Калински-Харабаса и наименьшие значения индекса Дэвиса-Болдина достигаются при Нормализации (**MinMaxScaler**). Именно этот метод масштабирования и использовался в последствии.
+
+Из 870 моделей были отобраны 34 модели кластеризации, которые сравнивались между собой по индексу Калински — Харабаса (`calinski_harabasz_score`) и индексу Дэвиса — Болдина (`davies_bouldin_score`), а также по интерпретируемости кластеров и визуализации.
+
+При этом наилучшие показатели достигаются у дескрипторов "vdc_color" и "osnet"
+
+При визуализации кластеров наихудшим образом себя продемонстрировал дескриптор "efficient-b7". 
+
+Наилучшим образом показали себя дескрипторы "vdc_color" и "vdc_type", кластеризованные моделью KMeans с числом кластеров 7.
+
+При обработке выбросов не удалось достигнуть качественного результата, при необходимости, возможно более глубокое исследование. На текущий момент наилучшая из имеющихся модель **"osnet. DBSCAN. {'eps': 1, 'min_samples': 1024}"**. В кластер выбросов попало больше кадров со свисающими ветвями, бликами от деревьев и изображений с надписями - как на самом кадре, так и на машинах.
+
+**В итоге**, по интерпретации изображений, попавших в кластеры, были выделены две модели:
+- vdc_type. KMeans. 9 кластеров - выделяет типы авто.
+- vdc_color. KMeans. 7 кластеров - выделяет цвет авто (метки представлены в PROJECT-6_Image_Clusterization.ipynb).
+
+Причём первая из них более информативна.
 
 :arrow_up:[to content](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Content)
 
@@ -75,5 +160,23 @@ In total, the dataset, after data processing and feature generation, had 90 feat
 
 :arrow_up:[to content](https://github.com/mvulf/sf_data_science/blob/main/project_6/README.md#Content)
 
-Thus, EDA techniques have improved MAPE from a base (_base_solution.ipynb) of 14.19%
-up to 12.19% (hotels-EDA_ML.ipynb). That is, the improvement was 14% of the base value of the metric.
+Отобранная модель позволяет выделять тип авто и вид спереди/сзади:
+
+0. кроссоверы (вид спереди)
+![img.png](results/vdc_type_cluster_0.png)
+1. седаны
+![img.png](results/vdc_type_cluster_1.png)
+2. грузовики
+![img.png](results/vdc_type_cluster_2.png)
+3. автобусы
+![img.png](results/vdc_type_cluster_3.png)
+4. седаны (вид спереди)
+![img.png](results/vdc_type_cluster_4.png)
+5. кроссоверы (вид сзади)
+![img.png](results/vdc_type_cluster_5.png)
+6. седаны
+![img.png](results/vdc_type_cluster_6.png)
+7. высокие авто - минивэны, грузовики автобусы
+![img.png](results/vdc_type_cluster_7.png)
+8. минивэны
+![img.png](results/vdc_type_cluster_8.png)
