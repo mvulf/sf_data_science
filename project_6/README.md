@@ -30,7 +30,9 @@
 
 #### Project content
 
-- [Main notebook](https://github.com/mvulf/sf_data_science/blob/main/project_6/PROJECT-6_Image_Clusterization.ipynb)
+- [Main notebook. Part 1](https://github.com/mvulf/sf_data_science/blob/main/project_6/PROJECT-6_Image_Clusterization_part_1.ipynb)
+
+- [Main notebook. Part 2](https://github.com/mvulf/sf_data_science/blob/main/project_6/PROJECT-6_Image_Clusterization_part_2.ipynb)
 
 - [Full notebook](https://drive.google.com/file/d/1-KLwHn3zzptxH2Sg_NPnaS-qkmiq3Zaz/view?usp=sharing)
 
